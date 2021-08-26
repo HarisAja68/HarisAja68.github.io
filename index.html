@@ -14,6 +14,8 @@
     />
     <!-- bosotstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css saya -->
     <link rel="stylesheet" href="style.css" />
 
@@ -49,9 +51,9 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/IMG_20180705_160851.JPG" alt="Mohamad Samudin Haris" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/IMG_20180705_160851.jpg" alt="Mohamad Samudin Haris" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Mohamad Samsudin Haris</h1>
-      <p class="lead">Mahasiswa | Saja</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -71,10 +73,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero qui aliquam officiis quisquam rem facere impedit nesciunt in voluptatibus tenetur.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nam sint neque fugit nesciunt, sapiente magni, similique rerum, ad harum saepe quod obcaecati molestiae rem!</p>
           </div>
         </div>
@@ -99,7 +101,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="projects 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
               <img src="img/projects/2.jpg" class="card-img-top" alt="projects 2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/projects/3.jpg" class="card-img-top" alt="projects 3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -123,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
               <img src="img/projects/4.jpg" class="card-img-top" alt="projects 4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -131,7 +133,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
               <img src="img/projects/5.jpg" class="card-img-top" alt="projects 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -149,6 +151,50 @@
       </svg>
     </section>
     <!-- akhir projecets -->
+
+    <!-- gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/1.jpg" alt="gambar 1" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/2.jpg" alt="gambar 2" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/3.jpg" alt="gambar 3" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/4.jpg" alt="gambar 4" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/5.jpg" alt="gambar 5" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/6.jpg" alt="gambar 6" class="img-fluid gallery-img" width="200" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhr gallery -->
 
     <!-- contact -->
     <section id="contact">
@@ -208,6 +254,31 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Mahasiswa | Saja" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxAKXUOdgiCfon1bXJ-2sGu9U-RyOvqGf2WMg5w5RRh35wHfvyrOb8nvpU03eejeoTC/exec";
